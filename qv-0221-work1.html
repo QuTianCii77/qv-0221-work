@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大国重器 · 强国成就</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"微软雅黑", "Microsoft YaHei", sans-serif;}
+body{background:#f5f5f5;color:#333;}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.back-btn{
+    padding: 8px 16px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.back-btn:hover{
+    background: #2980b9;
+}
+.nav-title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.header{
+    padding: 20px 0;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    text-align:center;
+}
+.header h1{
+    font-size:24px;
+    font-weight:600;
+    color:#1a1a1a;
+}
+.container{
+    max-width:1280px;
+    margin:0 auto;
+    padding:30px 15px;
+}
+.achieve-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:20px;
+}
+.achieve-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+    transition:all 0.3s ease;
+}
+.achieve-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-title{
+    padding:15px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:500;
+    color:#222;
+    border-top:1px solid #f0f0f0;
+}
+.footer{
+    padding:20px 0;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    background:#fff;
+    margin-top:20px;
+}
+@media (max-width: 768px){
+    .navbar{
+        padding: 10px 15px;
+    }
+    .back-btn{
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-img{
+        height: 160px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- 导航栏 - 新增 -->
+<div class="navbar">
+    <button class="back-btn" onclick="window.location.href='./cs4.html'">← 返回原网页</button>
+    <div class="nav-title">大国重器展示</div>
+</div>
+
+<!-- 顶部标题 -->
+<div class="header">
+  <h1>大国重器 · 强国成就</h1>
+</div>
+
+<!-- 核心成就卡片区域 -->
+<div class="container">
+  <div class="achieve-grid">
+    <!-- 1. 中国航天 -->
+    <div class="achieve-card">
+      <img src="./img/中国航天.jpeg" alt="中国航天" class="card-img">
+      <div class="card-title">中国航天</div>
+    </div>
+
+    <!-- 2. 中国高铁 -->
+    <div class="achieve-card">
+      <img src="./img/中国高铁.jpeg" alt="中国高铁" class="card-img">
+      <div class="card-title">中国高铁</div>
+    </div>
+
+    <!-- 3. 国产航母 -->
+    <div class="achieve-card">
+      <img src="./img/国产航母.jpeg" alt="国产航母" class="card-img">
+      <div class="card-title">国产航母</div>
+    </div>
+
+    <!-- 4. C919大飞机 -->
+    <div class="achieve-card">
+      <img src="./img/c919.jpeg" alt="C919大飞机" class="card-img">
+      <div class="card-title">C919大飞机</div>
+    </div>
+
+    <!-- 5. 北斗导航 -->
+    <div class="achieve-card">
+      <img src="./img/北斗导航.jpeg" alt="北斗导航" class="card-img">
+      <div class="card-title">北斗导航</div>
+    </div>
+
+    <!-- 6. 中国空间站 -->
+    <div class="achieve-card">
+      <img src="./img/中国空间站.jpeg" alt="中国空间站" class="card-img">
+      <div class="card-title">中国空间站</div>
+    </div>
+
+    <!-- 7. 5G通信 -->
+    <div class="achieve-card">
+      <img src="./img/5G.jpeg" alt="5G通信" class="card-img">
+      <div class="card-title">5G通信</div>
+    </div>
+
+    <!-- 8. 超级工程 -->
+    <div class="achieve-card">
+      <img src="./img/超级工程.jpeg" alt="超级工程" class="card-img">
+      <div class="card-title">超级工程</div>
+    </div>
+
+    <!-- 9. 新能源产业 -->
+    <div class="achieve-card">
+      <img src="./img/新能源产业.jpeg" alt="新能源产业" class="card-img">
+      <div class="card-title">新能源产业</div>
+    </div>
+
+    <!-- 10. 量子科技 -->
+    <div class="achieve-card">
+      <img src="./img/量子科技.jpeg" alt="量子科技" class="card-img">
+      <div class="card-title">量子科技</div>
+    </div>
+
+    <!-- 11. 人工智能 -->
+    <div class="achieve-card">
+      <img src="./img/人工智能.jpeg" alt="人工智能" class="card-img">
+      <div class="card-title">人工智能</div>
+    </div>
+
+    <!-- 12. 生物医药 -->
+    <div class="achieve-card">
+      <img src="./img/生物医药.jpeg" alt="生物医药" class="card-img">
+      <div class="card-title">生物医药</div>
+    </div>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+  大国成就 · 见证辉煌 © 2026
+</div>
+
+</body>
+</html>
